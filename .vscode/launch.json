@@ -1,0 +1,50 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Full Pipeline",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/run_full_pipeline.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src"
+            }
+        },
+        {
+            "name": "Train Models",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/train_models.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src"
+            }
+        },
+        {
+            "name": "Run A/B Test",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/run_ab_test.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src"
+            }
+        },
+        {
+            "name": "Streamlit Dashboard",
+            "type": "python",
+            "request": "launch",
+            "module": "streamlit",
+            "args": [
+                "run",
+                "app/streamlit_dashboard.py"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
