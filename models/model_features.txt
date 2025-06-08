@@ -1,0 +1,10 @@
+energy_loudness
+happiness_score
+dance_tempo
+danceability
+energy_dance
+happy_dance
+dancefloor_potential
+energy
+valence
+speechiness
