@@ -1,0 +1,22 @@
+{
+  "model_type": "Tuned Random Forest",
+  "accuracy": 0.7178217821782178,
+  "parameters": {
+    "max_depth": 15,
+    "min_samples_leaf": 4,
+    "min_samples_split": 2,
+    "n_estimators": 300
+  },
+  "features_used": [
+    "energy_loudness",
+    "happiness_score",
+    "dance_tempo",
+    "danceability",
+    "energy_dance",
+    "happy_dance",
+    "dancefloor_potential",
+    "energy",
+    "valence",
+    "speechiness"
+  ]
+}

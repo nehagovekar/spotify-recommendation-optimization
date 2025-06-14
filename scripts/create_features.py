@@ -235,11 +235,11 @@ def main():
     for file_path in data_files:
         if Path(file_path).exists():
             df = pd.read_csv(file_path)
-            print(f"✅ Loaded data from: {file_path}")
+            print(f"Loaded data from: {file_path}")
             break
     
     if df is None:
-        print("❌ No data file found!")
+        print(" No data file found!")
         print("Available files:")
         for path in Path("data").rglob("*.csv"):
             print(f"   {path}")
